@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styleapropos.css">
+    <title>Théo Hervé</title>
+    <link rel="icon" type="image/png" href="img/logo.png" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="maincontainer">
+        <!-- creation d'un header -->
+        <header class="headercontainer">
+          
+            <a href="index.html"><img src="img/logo.png" alt="logo"></a>
+            <div class="menu_big">
+                <ul class="nav">
+                    <li><a class="son1" href="index.html">Accueil</a>
+                        <audio id="beep1" preload="auto">
+                            <source src="audio/son1.wav">
+                            </source>
+                        </audio>
+                    </li>
+
+                    <li><a class="son2" href="apropos.html"> À Propos</a>
+                        <audio id="beep2" preload="auto">
+                            <source src="audio/son2.wav">
+                            </source>
+                        </audio>
+                    </li>
+
+                    <li><a class="son3" href="portfolio.html">Portfolio</a>
+                        <audio id="beep3" preload="auto">
+                            <source src="audio/son3.wav">
+                            </source>
+                        </audio>
+                    </li>
+
+                    <li><a class="son4" href="contact.php">Contact</a>
+                        <audio id="beep4" preload="auto">
+                            <source src="audio/son4.wav">
+                            </source>
+                        </audio>
+                    </li>
+                </ul>
+            </div>
+            <div class="menu">
+                <input type="checkbox" id="menu-toggle" />
+                <label id="trigger" for="menu-toggle"></label>
+                <label id="burger" for="menu-toggle"></label>
+                <ul id="menu">
+                    <li><a class="son1" href="index.html">Accueil</a></li>
+                    <li><a class="son2" href="apropos.html"> À Propos</a></li>
+                    <li><a class="son3" href="portfolio.html">Portfolio</a></li>
+                    <li><a class="son4" href="contact.php">Contact</a></li>
+                </ul>
+            </div>
+            <!--Menu Burger qui s'affiche en petite résolution-->
+            
+            <script>
+
+                var beepOne = $("#beep1")[0];
+                $(".son1")
+                    .mouseenter(function () {
+                        beepOne.play();
+                    });
+
+                var beepTwo = $("#beep2")[0];
+                $(".son2")
+                    .mouseenter(function () {
+                        beepTwo.play();
+                    });
+
+                var beepThree = $("#beep3")[0];
+                $(".son3")
+                    .mouseenter(function () {
+                        beepThree.play();
+                    });
+
+                var beepFour = $("#beep4")[0];
+                $(".son4")
+                    .mouseenter(function () {
+                        beepFour.play();
+                    });
+
+            </script>
+
+
+    </header>
+        <main>
+            <div class="musique">
+                <!--       <div class="blocvertmusique">
+                    <div><img src="img/1675436478550.jpg" alt=""></div>
+                </div>-->
+                <div class="ytb">
+                    <iframe width="100%" height="100%"
+                        src="https://www.youtube-nocookie.com/embed/ve7zZmjCji4?controls=0" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="textemusique">
+                    <h2>Musique</h2>
+
+                    <p class="citation"><span class="bold">« Figure out what you’re most passionate about in life and
+                            what you’re good at.
+                            And the mixture
+                            between those two and then you should give it your all, all the time. ». AVICII</span </p>
+                    <p>
+                        Avicii a toujours été un exemple et un <span class="bold">guide</span> pour pouvoir <span
+                            class="bold">avancer</span>. La musique</span> me permet de me
+                        <span class="bold">ressourcer</span> et m'a toujours permi de prendre du <span
+                            class="bold">recul</span> sur les choses.
+                        Je fais de la musique depuis un peu plus de <span class="bold">4 ans</span> maintenant. La
+                        musique <span class="bold">électronique</span> est la
+                        musique permettant une <span class="bold">liberté</span> de création totale. Les sonorités, les
+                        mélodies ont moins de
+                        conventions que dans certains autres styles de musique. C’est cette <span
+                            class="bold">quête</span> de <span class="bold">liberté</span> que j’ai
+                        toujours <span class="bold">cherché</span>.
+                    </p>
+                </div>
+            </div>
+            <div class="gtitre">
+                <h2>CENTRES D'INTERETS</h2>
+            </div>
+            <div class="interets">
+                <div class="card">
+                    <div class="content">
+                        <div class="front">
+                            <img src="img/sport-basketball.svg" alt="">
+                            <h2>SPORT</h2>
+                        </div>
+                        <div class="back border">
+                            <div class="box-border box-top"></div>
+                            <div class="box-border box-right"></div>
+                            <div class="box-border box-bottom"></div>
+                            <div class="box-border box-left"></div>
+                            <p>
+                                Le sport, a toujours été fondamental dans ma vie. Il me permet de me recentrer sur
+                                d’autres choses et de me mettre en « off ». Le sport m’a permis d’apprendre la <span
+                                    class="bold">rigueur</span>,
+                                l’<span class="bold">assiduité</span>, et la <span class="bold">ponctualité</span>. Il
+                                m’a permis d’allier <span class="bold">Sérieux</span> et <span
+                                    class="bold">plaisir</span>.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="content">
+                        <div class="front">
+                            <img src="img/graphisme.svg" alt="">
+                            <h2>GRAPHISME</h2>
+                        </div>
+                        <div class="back border">
+                            <div class="box-border box-top"></div>
+                            <div class="box-border box-right"></div>
+                            <div class="box-border box-bottom"></div>
+                            <div class="box-border box-left"></div>
+                            <p>
+                                J’ai toujours cherché le sens de ce qui m’entourais, j’ai toujours su que rien n’était
+                                fais
+                                au hasard. C’est pour assouvir cette soif de <span class="bold">compréhension</span> que
+                                j’ai commencer à
+                                m’intéresser
+                                au design d’<span class="bold">interface</span>. J’ai découvert toute les <span
+                                    class="bold">règles</span> les conventions en ce qui concerne
+                                les <span class="bold">couleurs</span>, les <span class="bold">typographies</span>, les
+                                <span class="bold">dispositions</span>...
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="content">
+                        <div class="front">
+                            <img src="img/people.svg" alt="">
+                            <h2>THÉÂTRE</h2>
+                        </div>
+                        <div class="back border">
+                            <div class="box-border box-top"></div>
+                            <div class="box-border box-right"></div>
+                            <div class="box-border box-bottom"></div>
+                            <div class="box-border box-left"></div>
+                            <p>
+                                Trouver un moyen d'expression n'est pas chose facile. J'ai fait beaucoup de Théâtre dans
+                                ma vie. <span class="bold">Apprendre</span> un texte, savoir s'en détacher pour <span
+                                    class="bold">improviser</span> de façons <span class="bold">réflechi</span>.
+                                Toutes ces <span class="bold">compétences</span> qui mon sont très utiles à l'<span
+                                    class="bold">oral</span> je les dois au Théâtre.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="gtitre">
+                <h2>COMPÉTENCES</h2>
+            </div>
+            <div class="interets">
+                <div class="card">
+                    <div class="content">
+                        <div class="front">
+                            <img src="img/graphisme.svg" alt="">
+                            <h2>GRAPHISME & DESIGN UI</h2>
+                        </div>
+                        <div class="back border">
+                            <div class="box-border box-top"></div>
+                            <div class="box-border box-right"></div>
+                            <div class="box-border box-bottom"></div>
+                            <div class="box-border box-left"></div>
+                            <p>
+                                J'ai des capacités d'<span class="bold">analyse</span> et je peux donc produire des
+                                livrables graphiquement <span class="bold">justes</span>
+                                et réfléchis. Analyser avant d'agir afin de faire au <span class="bold">mieux</span>.
+                                Je maîtrise une multitude
+                                d'<span class="bold">outils</span> comme la suite Affinity ainsi qu'une partie de la
+                                suite <span class="bold">adobe</span>, sans oublier
+                                <span class="bold">Figma</span> qui est un outil essentiel pour faire mes maquettes.
+                            </p>
+                            <div class="software">
+                                <img src="img/affinity designer.png" alt="">
+                                <img src="img/affinity photo.png" alt="">
+                                <img src="img/affinity publisher.png" alt="">
+                                <img src="img/adobe-Illustrator-logo-2-1.png" alt="">
+                                <img src="img/Group-5.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="content">
+                        <div class="front">
+                            <img src="img/design d'interface.svg" alt="">
+                            <h2>INTEGRATION
+                                & DEV WEB</h2>
+                        </div>
+                        <div class="back border">
+                            <div class="box-border box-top"></div>
+                            <div class="box-border box-right"></div>
+                            <div class="box-border box-bottom"></div>
+                            <div class="box-border box-left"></div>
+                            <p>
+                                J'ai des compétences en <span class="bold">intégration</span> en<span class="bold"> HTML
+                                    , CSS & JAVASCRIPT</span>. Je sais aussi developper en <span class="bold">PHP</span>
+                                pour le backend et je sais gérer une <span class="bold">base de données</span> en <span
+                                    class="bold">SQL</span>. Je
+                                sais répondre aux attentes et aux <span class="bold">demandes</span> en les appliquant
+                                comme il le faut.
+                            </p>
+                            <div class="software">
+                                <img src="img/html.svg" alt="">
+                                <img src="img/css.png" alt="">
+                                <img src="img/javascript-logo-transparent-logo-javascript-images-3.png" alt="">
+                                <img src="img/php.png" alt="">
+                                <img src="img/SQL.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="content">
+                        <div class="front">
+                            <img src="img/gestion de projet.svg" alt="">
+                            <h2>GESTION
+                                DE PROJET</h2>
+                        </div>
+                        <div class="back border">
+                            <div class="box-border box-top"></div>
+                            <div class="box-border box-right"></div>
+                            <div class="box-border box-bottom"></div>
+                            <div class="box-border box-left"></div>
+                            <p>
+                                Je sais mener à bien un <span class="bold">projet</span> de son début jusqu'à sa fin. Je
+                                sais utiliser les outils
+                                que j'ai à ma disposition afin de me <span class="bold">simplifier</span> la tâche :
+                                l'outil d'analyse <span class="bold">PESTEL</span>, le
+                                <span class="bold">GANT</span>, le <span class="bold">SWOT</span>...
+                            </p>
+                            <div class="software">
+                                <img src="img/gantt.webp" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="content">
+                        <div class="front">
+                            <img src="img/gestion de projet.svg" alt="">
+                            <h2>PRODUCTION MUSICALE</h2>
+                        </div>
+                        <div class="back border">
+                            <div class="box-border box-top"></div>
+                            <div class="box-border box-right"></div>
+                            <div class="box-border box-bottom"></div>
+                            <div class="box-border box-left"></div>
+                            <p>
+                                Je maîtrise les étapes de production musicale sur FL Studio. Que ce soit concernant le
+                                Sound Design
+                                avec des plugins comme Serum, Sylenth1 ou Vital. Concernant le mixage avec des multiples
+                                effets (dynamique, distortion, reverb...), ou même concernant le mastering avec la
+                                suite Ozone ou FabFilter.
+                            </p>
+                            <div class="software">
+                                <img src="img/FL-Studio-12-Logo.png" alt="">
+                                <img src="img/vital_logo_circle_512.png" alt="">
+                                <img src="img/ozone.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="gtitre">
+                <h2>FORMATION & EXPERIENCES PROFESSIONNELLES
+                </h2>
+            </div>
+            <div class="frisechrono">
+                <div class="line"></div>
+                <div class="etage1">
+                    <div class="textechrono">
+                        <img src="img/MMI.svg" alt="">
+                        <div>
+                            <h3>
+                                2022-23 : BUT MMI 1ERE ANNÉE
+                            </h3>
+                            <p>Intégration, Développement Web, Graphisme, Communication, Marketing, Sociologie, Base de
+                                données ...
+                            </p>
+                        </div>
+                    </div>
+                    <div class="divcercle">
+                        <div class="cercle"></div>
+                    </div>
+                </div>
+                <div class="etage2">
+                    <div class="textechrono">
+                        <img src="img/camping.svg" alt="">
+                        <div>
+                            <h3>
+                                ÉTÉ 2022 : CAMPING DE CRUCKIN, PAIMPOL
+                            </h3>
+                            <p> Gestion du camping de Cruckin, localisé à Paimpol. J'ai appris à gérer de l'argent, à
+                                avoir des responsabilités, à prendre des initiatives, à avoir un contact différent avec
+                                les clients.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="divcercle">
+                        <div class="cercle"></div>
+                    </div>
+                </div>
+                <div class="etage1">
+                    <div class="textechrono">
+                        <img src="img/diploma-scroll.svg" alt="">
+                        <div>
+                            <h3>
+                                2022 : BACCALAURÉAT GENERAL
+                            </h3>
+                            <p>Mention BIEN. Avec les Spécialités: Science de l'Ingénieur, Mathématiques,
+                                Physique-Chimie.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="divcercle">
+                        <div class="cercle"></div>
+                    </div>
+                </div>
+                <div class="etage2">
+                    <div class="textechrono">
+                        <img src="img/market-stall.svg" alt="">
+                        <div>
+                            <h3>
+                                ÉTÉ 2021 : HÔTE DE CAISSE, SUPER U, TRÉGUIER
+                            </h3>
+                            <p> Première expérience professionnelle, découverte de la relation avec le client, gestion
+                                de la caisse, premières responsabilités.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="divcercle">
+                        <div class="cercle"></div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+        <footer>
+            <div>
+                <p>Théo Hervé</p>
+            </div>
+            <div class="iconsdiv">
+
+                <a href="https://www.youtube.com/@TheoHerve"><img src="img/Youtube.svg" alt="Youtube"></a>
+                <a href="https://www.linkedin.com/in/th%C3%A9o-herv%C3%A9-112436257"><img src="img/Linkedin.svg" alt=""></a>
+                <a href="https://www.instagram.com/hoori_music/"><img src="img/Instagram.svg" alt="Instagram"></a>
+                <a href="https://www.behance.net/thoherv"><img src="img/Behance.svg" alt="behance"></a>
+
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
